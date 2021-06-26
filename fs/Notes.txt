@@ -1,0 +1,48 @@
+file System
+-----------
+Node.js includes fs module to access physical file system.
+The fs module is responsible for all the asynchronous or synchronous file I/O operations.
+Reading and Writing the File in Synchronous Way
+-----------------------------------------------------------------
+ Writing the File 
+------------------
+Syntax : fs.writeFileSync( ‘ File Name ‘ , “Data or File Content");
+var fs=require('fs')
+//
+fs.writeFile('newfile2.txt','utf-8'
+)
+
+Note :fs.writeFileSync() donot returns anything. 
+ Reading the File
+-------------------
+Syntax : fs.readFileSync(‘File Name’);
+Note :fs.readFileSync() returns the Buffer Data.
+--------------------------------------------------------
+var fs = require('fs');
+
+var data = fs.readFileSync('dummyfile.txt', 'utf8');
+console.log(data);
+---------------------------------------------------------
+Reading and Writing the File in Synchronous Way
+ Writing the File 
+-------------------
+Syntax : fs.writeFile( ‘ File Name ‘ , “Data or File Content“ , (err => {  console.log(err) } );
+var fs = require('fs');
+
+fs.writeFile('test.txt', 'Hello World!', function (err) { 
+                        if (err)
+        console.log(err);
+                        else
+        console.log('Write operation complete.');
+});
+Note :fs.writeFile() donot returns anything.
+  Reading the File
+ -------------------
+Syntax : fs.readFile(‘File Name’ , (err , data) =>  {   if(err) {    } else {    } }; 
+Note :fs.readFileSync() returns the Buffer Data.
+var fs = require('fs');
+
+var fs = require('fs');
+
+var data = fs.readFileSync('dummyfile.txt', 'utf8');
+console.log(data);

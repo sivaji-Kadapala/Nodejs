@@ -1,0 +1,20 @@
+path
+----
+The Path module provides a way of working with directories and file paths.
+Path Properties and Methods
+-----------------------------
+Method	Description
+basename()
+delimiter	
+dirname()	
+extname()	
+format()	
+isAbsolute()
+join()	
+normalize()	
+parse()	
+posix	
+relative()	
+resolve()	
+sep	
+win32	

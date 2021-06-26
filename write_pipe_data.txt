@@ -1,0 +1,3 @@
+The above example reads TestFile.txt (on Windows) asynchronously and executes callback function when 
+read operation completes. This read operation either throws an error or completes successfully. The err 
+parameter contains error information if any. The data parameter contains the content of the specified file.

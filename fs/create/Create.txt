@@ -1,0 +1,7 @@
+Create Files
+-----------------
+The File System module has methods for creating new files:
+
+fs.appendFile()
+fs.open()
+fs.writeFile()

@@ -1,0 +1,7 @@
+Read Files
+-----------
+The fs.readFile() method is used to read files on your computer.
+Use fs.readFile() method to read the physical file asynchronously.
+Signature:
+----------
+fs.readFile(fileName [,options], callback)

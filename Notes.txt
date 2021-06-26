@@ -1,0 +1,37 @@
+->Nodejs is open source server side javascript run time environment built on chrome v8 javascript engine
+->it provides an event driven ,non-blocking i/o and cross platform runtime environment for building highly scalable server side applications using javascript
+->it is written in c++
+->apps like command line application,web application,REST API server
+->How ever ,it is mainly used to build network programmes
+  like web servers,similr to PHP,java,or ASP.network
+->node.js was written and introduced by Ryan dahl in 2009
+How javascript works
+---------------------
+->chrome and nodejs are two environments which help to run the js code in browser and server side respectivelly
+->when js code runs in the browser , it sends the code to the v8 engine which compiles and return the machine code 
+->v8 engine is a google open source which helps to compile js code
+->v8 is written c++
+->chrome has implemented on window object along with original javascript code
+->Node has implemented on the global object along with original javascript code
+Nodejs Roles
+-------------
+Run server:-Nodejs can create the server and listen to incoming requests
+Business logic:-handle requests,validate input,connect database
+responces:-Return Responces(HTML pages,JSON....)
+
+Advantages
+------------
+1.Asyncronous programming-non blocking code
+2.Execute in js server
+3.single threaded
+4.open source framework under the MIT licence.
+5.light weight programming 
+6.Cross-platform framework that runs on windows ,mac,linux etc
+modules
+----------
+local:files(app.js,)
+core:imported in local modules
+third party:
+assignmemt
+----------
+all modules like rmdir,

@@ -1,0 +1,150 @@
+Def:
+----
+Node.js comes with virtual environment called REPL (aka Node shell). 
+REPL stands for Read-Eval-Print-Loop. It is a quick and easy way to test simple Node.js/JavaScript code.
+The work of REPL can be understood from its full form:
+------------------------------------------------------
+Read : It reads the inputs from users and parses it into JavaScript data structure. It is then stored to memory.
+Eval : The parsed JavaScript data structure is evaluated for the results.
+Print : The result is printed after the evaluation.
+Loop : Loops the input command.
+Step 1 — Starting and Stopping the REPL
+---------------------------------------
+If you have node installed, then you also have the Node.js REPL. 
+To start it, simply enter node in your command line shell:
+-----------node--------------------
+This results in the REPL prompt:
+
+>
+ 
+The > symbol we  know that we can enter JavaScript code to be immediately evaluated.
+For an example, try adding two numbers in the REPL by typing this:
+
+> 2 + 2
+When you press ENTER, the REPL will evaluate the expression and return:
+
+4
+stopping repl,i will explain in last of the concept
+Step 2 — Executing Code in the Node.js REPL
+-------------------------------------------
+Example: Performing Arithmetical operations in REPL
+          ------------------------------------------
+$ node
+> 1 + 3
+4
+> 1 + ( 2 * 3 ) - 4
+3
+Conclusion
+-----------
+The REPL is an interactive environment that allows you to execute JavaScript code without first having to write it to a file.
+
+
+Example: Using variable
+        ---------------
+		Variables are used to store values and print later. If you don't use var keyword then value is stored in the variable and printed whereas 
+		if var keyword is used then value is stored but not printed. You can print variables using console.log().
+> var x = 10, y = 20;
+> x + y
+30
+
+Example: Multiple Expressions:Node REPL supports multiline expressions like JavaScript.
+        ----------------------
+		
+
+var x = 0  
+undefined  
+> do {  
+... x++;  
+... console.log("x: " + x);  
+... } while ( x < 10 );  
+Example:-UnderScore,You can also use underscore _ to get the last result.
+        -----------------------------------------------------------------
+step3:Shortcuts
+---------------
+To quickly get the last evaluated value, use the underscore character. At the prompt, type _ and press ENTER:
+
+> _
+The previously entered string will appear again:
+Step 4 — Using REPL Commands
+-------------------------------
+The REPL has specific keywords to help control its behavior. Each command begins with a dot ..
+
+.help
+To list all the available commands, use the .help command:
+
+> .help
+ 
+There aren’t many, but they’re useful for getting things done in the REPL:
+
+.break    Sometimes you get stuck, this gets you out
+.clear    Alias for .break
+.editor   Enter editor mode
+.exit     Exit the repl
+.help     Print this help message
+.load     Load JS from a file into the REPL session
+.save     Save all evaluated commands in this REPL session to a file
+
+Press ^C to abort current expression, ^D to exit the repl
+If ever you forget a command, you can always refer to .help to see what it does.
+
+.break/.clear
+Using .break or .clear, it’s easy to exit a multi-line expression. For example, begin a for loop as follows:
+
+> for (let i = 0; i < 100000000; i++) {
+ 
+To exit from entering any more lines, instead of entering the next one, use the .break or .clear command to break out:
+
+... .break
+ 
+You’ll see a new prompt:
+
+>
+The REPL will move on to a new line without executing any code, similar to pressing CTRL+C.
+
+.save and .load
+The .save command stores all the code you ran since starting the REPL, into a file. The .load command runs all the JavaScript code from a file inside the REPL.
+
+Quit the session using the .exit command or with the CTRL+D shortcut. Now start a new REPL with node. Now only the code you are about to write will be saved.
+
+Create an array with fruits:
+
+> fruits = ['banana', 'apple', 'mango']
+ 
+In the next line, the REPL will display:
+
+[ 'banana', 'apple', 'mango' ]
+Save this variable to a new file, fruits.js:
+
+> .save fruits.js
+ 
+We’re greeted with the confirmation:
+
+Session saved to: fruits.js
+The file is saved in the same directory where you opened the Node.js REPL. For example, if you opened the Node.js REPL in your home directory, then your file will be saved in your home directory.
+
+Exit the session and start a new REPL with node. At the prompt, load the fruits.js file by entering:
+
+> .load fruits.js
+ 
+This results in:
+
+fruits = ['banana', 'apple', 'mango']
+
+[ 'banana', 'apple', 'mango' ]
+The .load command reads each line of code and executes it, as expected of a JavaScript interpreter. You can now use the fruits variable as if it was available in the current session all the time.
+
+Type the following command and press ENTER:
+
+> fruits[1]
+ 
+The REPL will output:
+
+'apple'
+expected, or you believe you have an interesting code snippet worth sharing or explore in more depth, you can use the .save and .load commands to make both those goals possible.
+
+Conclusion
+--------------
+The REPL is an interactive environment that allows you to execute JavaScript code without first having to write it to a file.
+
+
+

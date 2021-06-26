@@ -1,0 +1,6 @@
+Update Files
+------------
+The File System module has methods for updating files:
+
+fs.appendFile()
+fs.writeFile()

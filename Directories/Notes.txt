@@ -1,0 +1,6 @@
+Creating Parent Directories with multiple Files
+-----------------------------------------------
+-->In a Node.js application, you can use the mkdir() method provided by the fs core module to create a new directory.
+-->This method works asynchronously to create a new directory at the given location.
+-->You can pass an optional boolean parameter called recursive to the mkdir() 
+-->When the recursive parameter is true, the mkdir() method doesn't throw any error even if the path already exists.
