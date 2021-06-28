@@ -15,6 +15,7 @@ var fun2 = (msg) => {
 };
 
 // Listening to myEvent with fun1 and fun2
+//Alias for emitter.on(eventName, listener).
 eventEmitter.addListener('myEvent', fun1);
 
 // fun2 will be inserted in front of listeners array

@@ -4,8 +4,8 @@ const EventEmitter = require('events');
 var emitter= new EventEmitter();
 emitter.on('foo', () => {});
 emitter.on('bar', () => {});
-emitter.on(Symbol('test'), () => {});
-emitter.on(['foo', Symbol('test2')], () => {});
+// emitter.on(Symbol('test'), () => {});
+// emitter.on(['foo', Symbol('test2')], () => {});
 
 console.log(emitter.eventNames());
 // Prints: [ 'bar', 'foo', [ 'foo', Symbol(test2) ], [ 'foo', Symbol(test2) ] ]

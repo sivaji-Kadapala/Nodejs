@@ -1,3 +1,14 @@
-var fs=require('fs')
-var data=fs.readFileSync('dummyFile.txt','utf-8')
-console.log(data);
+// Importing events
+const EventEmitter = require('events');
+   
+// Initializing event emitter instances 
+var eventEmitter = new EventEmitter();
+  
+// Registering to myEvent 
+eventEmitter.on('myEvent', (msg) => {
+   console.log(msg);
+});
+  eventEmitter.removeListener('myEvent', "First event");
+   
+// Triggering myEvent
+eventEmitter.emit('myEvent', "First event");

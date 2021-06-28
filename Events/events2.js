@@ -9,7 +9,7 @@ em.addListener('FirstEvent', function (data) {
 
 //Subscribe SecondEvent
 em.on('SecondEvent', function (data) {
-    console.log('First subscriber: ' + data);
+    console.log('Second subscriber: ' + data);
 });
 
 // Raising FirstEvent
