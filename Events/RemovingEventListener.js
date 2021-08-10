@@ -16,9 +16,11 @@ const fun2 = (msg) => {
 eventEmitter.on('myEvent', fun1);
 eventEmitter.on('myEvent', fun1);
 eventEmitter.on('myEvent', fun2);
+//The 'removeListener' event is emitted after the listener is removed.;
+
    
 // Removing listener fun1 that was
-// registered on the line 13
+
 eventEmitter.removeListener('myEvent', fun1);//Alias for emitter.off()
    
 // Triggering myEvent

@@ -1,3 +1,9 @@
+Features of nodejs
+------------------
+->Node is easy to get started
+->Super fast and highly scalable servise
+->Large ecosystem of open source libs
+->javascript everywhere
 what is Node.JS
 ---------------
 ->Nodejs is open source server side javascript run time environment built on chrome v8 javascript engine
